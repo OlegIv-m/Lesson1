@@ -1,0 +1,46 @@
+<html>
+	<head>
+		<meta>
+	</head>
+	<body>
+		<div>
+			<form method="post" action="index.html" name="RegisterName">
+				<label>
+					<strong>Имя</strong> <input type="text">
+				</label><br>
+				<label>
+					<strong>Фамилия</strong> <input type="text">
+				</label><br>
+				<label>
+					<strong>Отчество</strong> <input type="text">
+				</label><br>
+				<label>
+					<strong>Дата рождения</strong> <input type="date">
+				</label><br>
+				<label>
+					<strong>Пол:</strong> мужчиина<input type="radio" name="sex" value="male">
+					женщина<input type="radio" name="sex" value="female">
+				</label><br>
+				<label>
+					<strong>Номер телефона</strong> <input type="tel" pattern="^[0-9]{7,11}">
+				</label><br>
+				<label>
+					<strong>Интересующие темы:</strong> кошки<input type="checkbox" value="cats">собаки<input type="checkbox" value="dogs">коалы<input type="checkbox" value="koals">
+				</label><br>
+				<label>
+					<strong>Электронный адрес(Логин)</strong><input type="email" required="yes" >
+				</label><br>
+				<label>
+					<strong>Пароль</strong><input type="password" required="yes" minlength="8" maxlength="20">
+				</label><br>
+				<label>
+					<strong>Подтверждение пароля</strong><input type="password" required="yes" minlength="8" maxlength="20"/>
+				</label><br>
+				<input type="submit">
+			</form>
+		</div>
+		<div>
+			<a href="index.html"><h2>На главную!</h2></a>
+		</div>
+	</body>
+</html>

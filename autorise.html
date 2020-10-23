@@ -3,10 +3,34 @@
 		<meta>
 	</head>
 	<body>
-		<div>
-			<form>
+	
+		<div title="Авторизируйтесь для доступа к личному кабинету" align="center">
+			<h2 id="AutorisationTitle"><strong>Авторизация на сайте.</strong></h2>
+		</div>
+		
+		<form method="post" action="index.html" name="AccountName">
+		
+			<div id="LoginLabel" title="Введите учетную запись в формате Email адреса" align="center">
+				<label for="LoginFieldInput" >
+					Login
+				</label>
+				<input type="text" name="LoginFieldInputName" required="yes" pattern="^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" placeholder="user" tabindex="1" autofocus="yes" id="LoginFieldInput" size="30">
+			</div>
+			
+			<div align="center">
 				<label>
-			</form>
+					Password
+					<input type="password" tabindex="2" size="25" placeholder="password" required="yes" pattern="^[a-zA-Z]\w{5,10}$">
+				</label>
+			</div>
+			
+			<div id="LoginSubmit">
+				<input type="submit">
+			</div>
+			
+		</form>
+		<div>
+			<a href="index.html"><h2>На главную!</h2></a>
 		</div>
 	</body>
 </html>
