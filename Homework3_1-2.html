@@ -1,0 +1,118 @@
+<html>
+	<head>
+		<link rel="stylesheet" href="css/Homework3_1-2.css">
+	</head>
+	<body background="./images/FormBackground.jpg">
+		<div class="header">
+			<ul type="none" class="menu">
+				<!--Навигация по сайту-->
+				<li class="smoose">
+					<a href="index1.html"><image src="images/label_cat.jpg" alt="cats"></a>
+				</li>
+				<li>
+					<a href="index2.html"><image src="images/label_puppy.jpg" alt="puppies"></a>
+				</li>
+				<li>
+					<a href="index3.html"><image src="images/label_koala.jpg" alt="koalas"></a>
+				</li>
+				<li>
+					<a href="autorise.html"  align="center">
+						<p align="center">Авторизуйтесь</p>
+					</a>
+				</li>
+				<li>
+					<a href="register.html">
+						<p align="center">Регистрация</p>
+					</a>
+				</li>
+			</ul>
+		</div>
+		<!-- Форма регистрации-->
+		<div>
+			<h1 align="center"> Анкета-опросник</h1>
+			<form action="" method="post" enctype="multipart/form-data" accept-charset="utf8 utf-8" accept="text/plain,image/*,application/zip" name="FormName" id="FormId" target="_self">
+				<fieldset title="ФИО">
+					<legend>Личные данные</legend>
+					<label>Фамилия<input type="text"></label>
+					<br/>
+					<label>Имя<input type="text"></label>
+					<br/>
+					<label>Отчество<input type="text"></label>
+					<br/>
+				</fieldset>
+				<label>Полных лет<input type="number" min="0" max="110" step="1" value="0" name="FormNameAge"id="FormIdAge"></label>
+				<br/>
+				<label>Место жительства<input type="text" list="LocationList" placeholder="город" size="15"></label>
+				<br/>
+				<label>Любимые животные<input type="text" list="FavouredPetsList" size="10"></label>
+				<datalist id="LocationList">
+					<option value="Санкт-Петербург">
+					<option value="Москва">
+					<option value="Россия">
+				</datalist>
+				<datalist id="FavouredPetsList">
+					<option value="Cats">Кошки</option>
+					<option value="Dogs">Собаки</option>
+					<option value="Koalas">Коалы</option>
+				</datalist>
+				<br/>
+				<label>Возраст<input type="number" max="100" min="18"></label>
+				<br/>
+				<label for="">Откуда узнали о нас:</label>
+					<ul>
+						<li>
+							<label for="Internet">Интернет</label><input type="radio" value="Internet" id="Internet" name="NewsSoources">
+						</li>
+						<li>
+							<label for="Newspaper">Газеты</label><input type="radio" value="Newspaper" id="Newspaper" name="NewsSoources">
+						</li>
+						<li>
+							<label for="Radio">Радио</label><input type="radio" value="Radio" id="Radio" name="NewsSoources">
+						</li>
+						<li>
+							<label for="TV">Телевидение</label><input type="radio" value="TV" id="TV" name="NewsSoources">
+						</li>
+						<li>
+							<label for="Friends">Знакомые</label><input type="radio" value="Friends" id="Friends" name="NewsSoources">
+						</li>
+					</ul>
+				
+				<br/>
+				<br/>
+				<table bgcolor="#993399" width="300px" rules="rows" cellspacing="10" border="5px">
+					<caption>Наши адреса и контакты</caption>
+					<thead>
+						<tr>
+							<td>Магазины</td>
+							<td>Телефоны</td>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>НА Нарвской</td>
+							<td>8(999)222-22-22</td>
+						</tr>
+						<tr>
+							<td>На Спасской</td>
+							<td>8(999)333-33-33</td>
+						</tr>
+						<tr>
+							<td>На Технологической</td>
+							<td>8(999)444-44-44</td>
+						</tr>
+					</tbody>
+				</table>
+				<label>Ваши пожелания:<br/>
+					<textarea rows="10" cols="30" maxlength="1000" wrap="hard" form="FormId" name="Opinion" id="FormOpinion" ></textarea>
+				</label>
+				<br/>
+				<input type="submit">
+			</form>
+		</div>
+		<span>
+			Очень много текста для отображения скрола!Очень много текста для отображения скрола!Очень много текста для отображения скрола!Очень много текста для отображения скрола!
+			Очень много текста для отображения скрола!Очень много текста для отображения скрола!Очень много текста для отображения скрола!
+			Очень много текста для отображения скрола!
+		</span>
+	</body>
+</html>

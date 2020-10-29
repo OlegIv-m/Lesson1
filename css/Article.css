@@ -1,0 +1,9 @@
+.continue{
+	display: block;
+	border: 4px solid grey;
+	background-color: pink;
+	margin-left: auto;
+	margin-right: auto;
+	width: 150px;
+	border-radius: 10px;
+}
