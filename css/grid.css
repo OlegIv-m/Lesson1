@@ -64,6 +64,10 @@ img{
 	object-fit: cover;
 }
 
+.col-3 img{
+	height: 100vh;
+}
+
 .slider{
 	position: absolute;
 	top: 20px;
