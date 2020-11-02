@@ -1,0 +1,15 @@
+*{
+	box-sizing: border-box;
+	margin: 0;
+}
+.flex-container{
+	display: flex;
+}
+
+.hidden{
+	display: none;
+}
+
+img.opener:hover > .hidden {
+	display: block;
+}
