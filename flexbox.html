@@ -5,53 +5,48 @@
 		<link rel="stylesheet" href="./css/flex.css">
 	</head>
 	<body>
-		<nav class="menu">
-			<ul type="none">
-				<!--Навигация по сайту-->
-				<li>
-					<a href="index1.html" class="opener"><img src="images/label_cat.jpg" alt="cats" class="opener"></a>
-					<ul class="hidden">
-						<li>
-							<a href="index1.html#cat1">cat1</a>
-						</li>
-						<li>
-							<a href="index1.html#cat2">cat2</a>
-						</li>
-						<li >
-							<a href="index1.html#cat3">cat3</a>
-						</li>
-					</ul>
-				</li>
-				<li>
-					<a href="index2.html"><image src="images/label_puppy.jpg#" alt="puppies"></a>
-				</li>
-				<li>
-					<a href="index3.html"><image src="images/label_koala.jpg" alt="koalas"></a>
-				</li>
-				<li>
-					<a href="autorise.html">Авторизуйтесь</a>
-				</li>
-				<li>
-					<a href="register.html">Регистрация</a>
-				</li>
-			</ul>
+		<nav class="flex-menu">
+			<!--Навигация по сайту-->
+			<div>
+				<a href="index1.html" class="opener"><img src="images/label_cat.jpg" alt="cats" class="opener"></a>
+				<ul class="hidden">
+					<div>
+						<a href="index1.html#cat1">cat1</a>
+					</div>
+					<div>
+						<a href="index1.html#cat2">cat2</a>
+					</div>
+					<div >
+						<a href="index1.html#cat3">cat3</a>
+					</div>
+				</ul>
+			</div>
+			<div>
+				<a href="index2.html"><image src="images/label_puppy.jpg#" alt="puppies"></a>
+			</div>
+			<div>
+				<a href="index3.html"><image src="images/label_koala.jpg" alt="koalas"></a>
+			</div>
+			<div>
+				<a href="autorise.html">Авторизуйтесь</a>
+			</div>
+			<div>
+				<a href="#form" class="registration">Регистрация</a>
+				<div class="form" action="#" method="post" id="form">
+					<form>
+						<div class="fromBox">
+						<p>Login<input type="text"></p>
+						<p>Password<input type="password"></p>
+						<input type="submit" value="Login" formaction="flexbox.html">
+						</div>
+					</form>
+				</div>
+				
+				<div class="shadow">
+				
+				</div>
+			</div>
 		</nav>
-		<div class="flex-container">
-			<div>
-				1
-			</div>
-			<div>
-				2
-			</div>
-			<div>
-				3
-			</div>
-			<div>
-				4
-			</div>
-			<div>
-				5
-			</div>
-		</div>
+		
 	</body>
 </html>
