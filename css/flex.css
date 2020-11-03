@@ -4,20 +4,16 @@
 }
 .flex-menu{
 	display: flex;
-	flex-basis: 20%;
+	justify-content: space-around;
 }
 
 .hidden{
 	display: none;
 }
 
-.opener:hover ~ .hidden {
+div.opener:hover  .hidden{
 	display: block;
 }
-
-/* .hidden[display="block"]{ */
-	/* display: block; */
-/* } */
 
 .hidden:hover{
 	display: block;
@@ -38,13 +34,19 @@
 	z-index: 2;
 }
 
-.form p {
+.form p{
 	text-align: center;
 }
-.form input{
+.form input, .form label{
+	text-align: center;
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
+}
+
+.form .cancelLabel{
+	text-decoration-line: underline;
+	color: black;
 }
 
 input[type="submit"]{
