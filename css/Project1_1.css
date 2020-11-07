@@ -1,0 +1,170 @@
+@import url("./Project_all.css");
+
+@media  (max-width: 600px){
+	.grid_main{
+		width: 100%;
+		height: 100%;
+		display: grid;
+		grid-template-columns: 1fr;
+		grid-template-rows: auto;
+		align-content: start;
+		left: 10%;
+		right: 10%;
+	}
+	.main{
+		display: none;
+	}
+	.main-slider{
+		display: none;
+	}
+	.side-menu{
+		display: none;
+	}
+}
+
+@media (min-width: 601px){
+
+	.grid_main{
+		display: grid;
+		grid-template-columns: 150px 900px 200px;
+		grid-template-rows: 50px auto 1fr;
+		justify-content: center;
+		grid-template-areas: "logo menu logIn"
+							"side slider articles"
+							"about about about";
+		column-gap: 5px;
+		row-gap: 10px;
+	}
+
+	.main-logo{
+		text-align: center;
+		background-color: lightgreen;
+		grid-area:logo;
+	}
+	.main-menu{
+		display: grid;
+		background-color: none;
+		grid-template-columns: 1fr 1fr 1fr;
+		grid-template-rows: 50px 1fr 200px;
+		/* grid-template-areas: "header header header" */
+							/* "side body body" */
+							/* "footer footer footer"; */
+		grid-area: menu;
+		column-gap: 20px;
+	}
+	.main-logIn{
+		text-align: center;
+		grid-area: logIn;
+		background-color: lightgreen;
+	}
+	.side-menu{
+		display: grid;
+		grid-template-columns: 1fr;
+		grid-template-rows: auto;
+		background-color: lightgrey;
+		border-top-right-radius: 20px;
+		border-bottom-right-radius: 20px;
+		grid-area: side;
+		top: -1px;
+		position: sticky;
+	}
+
+	.main-slider{
+		text-align: center;
+		position: relative;
+		/* min-height: 600px; */
+		/* height: 90vh; */
+		grid-area:slider;
+		background-color: lightgreen;		
+	}
+	.main-articles{
+		display: grid;
+		grid-template-columns: 1fr;
+		grid-template-rows: 30px auto;
+		grid-area: articles;
+		background-color: lightgreen;
+	}
+
+	.main-slider  .active{
+		display:none;
+	}
+	.main-about{
+		display: grid;
+		grid-template-columns: auto;
+		grid-template-rows: auto auto;
+		text-align: center;
+		/* grid-column-start: 1; */
+		/* grid-column-end: 4; */
+		/* grid-row-start: 3; */
+		/* grid-row-end: 4; */
+		justify-items: center;
+		grid-row-gap: 10px;
+		grid-area: about;
+	}
+	
+	.main-menu .grid-card{
+		background-color: lightgreen;
+	}
+
+
+	[id^=slider]{
+		max-width: 100%;
+		max-height: 100%;
+	}
+
+	#slider1:target{
+		display: block;
+	}
+	#slider2:target{
+		display: block;
+	}
+	#slider2:target < body{
+		background-image: url("../images/catTextures.jpg");
+	}
+	#slider3:target{
+		display: block;
+	}
+	/* slider switcher*/
+	.sliderLabels{
+		display: block;
+		width: auto;
+		height: 50px;
+		position: absolute;
+		bottom: 5px;
+		left: 0;
+		right: 0;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	#sliderLabel1:active img{
+		border: 2px solid red;
+	}
+	#sliderLabel2:active img{
+		border: 2px solid red;
+	}
+	#sliderLabel3:active img{
+		border: 2px solid red;
+	}
+
+	
+	.articles div{
+		
+	}
+	
+
+	.main-about div{
+		width: 80%;
+		text-align: justify;
+		background-color: white;
+		padding: 10px 20px;
+	}
+
+	#about-header{
+		height: auto;
+		text-align: center;
+		font-size: 1.4em;
+		float: none;
+	}
+	
+}
+

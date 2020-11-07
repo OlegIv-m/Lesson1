@@ -1,0 +1,18 @@
+*{
+	box-sizing: border-box;
+	margin: 0;
+}
+.grid{
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-template-rows: 100px 800px 800px;
+}
+
+.grid *{
+	border: 2px solid black;
+}
+
+.grid h1{
+	position: sticky;
+	top: -1px;
+}

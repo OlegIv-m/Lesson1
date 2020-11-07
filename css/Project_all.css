@@ -1,0 +1,43 @@
+body *{
+	box-sizing: border-box;
+	margin: 0;
+	color: darkblue;
+	font-family: serif;
+	font-size: 1.1em;
+
+}
+
+body{
+	box-sizing: border-box;
+	background-image: url("../images/dogTextures.jpg");
+	margin: 0;
+}
+
+.grid-card{
+	border: 2px solid blue;
+	border-radius: 9px;
+	text-align: center;
+}
+
+.grid_hover:hover{
+	background-color: green;
+}
+
+/* div{ */
+	/* border: 2px solid black; */
+/* } */
+
+.menu,.main{
+	background-color: 	rgb(0, 255, 191);
+	opacity: 0.5;
+
+}
+a:visited{
+	color: red;
+}
+.main-menu~img{
+	overflow: hidden;
+}
+[display=grid]{
+	text-align: center;
+}
