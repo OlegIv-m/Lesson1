@@ -14,7 +14,7 @@ body{
 }
 
 .grid-card{
-	border: 2px solid blue;
+
 	border-radius: 9px;
 	text-align: center;
 }
@@ -23,9 +23,6 @@ body{
 	background-color: green;
 }
 
-/* div{ */
-	/* border: 2px solid black; */
-/* } */
 
 .menu,.main{
 	background-color: 	rgb(0, 255, 191);
